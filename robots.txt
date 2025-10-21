@@ -1,4 +1,15 @@
+# robots.txt para https://buenasbox.github.io/NazarethPM/
 User-agent: *
 Allow: /
 
-Sitemap: https://BuenasBox.github.io/NazarethPM/sitemap.xml
+# Evitar rastreo de archivos internos
+Disallow: /assets/
+Disallow: /manifest.json
+Disallow: /humans.txt
+Disallow: /security.txt
+
+# Mapa del sitio
+Sitemap: https://buenasbox.github.io/NazarethPM/sitemap.xml
+
+# Información del sitio
+Host: https://buenasbox.github.io/NazarethPM/
