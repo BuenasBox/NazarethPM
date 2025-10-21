@@ -9,17 +9,15 @@
   <meta name="description" content="Sommelier Nazareth Padilla Montero. Catas guiadas, maridajes y asesoría personalizada de vinos en Pérez Zeledón (Zona Brunca, Costa Rica). Cava Gourmet Market.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="google-site-verification" content="dSD-vexOW-35dT3fkPjhbjKohgcjeQeJNurQCw7Qbjw">
+  <meta name="keywords" content="vino Pérez Zeledón, cata de vinos, sommelier, asesoría de vinos, maridajes, vinoteca, zona sur, Cava Gourmet Market, Nazareth Padilla Montero, vino en Zona Brunca, vino cerca de mí">
 
-  <!-- Palabras clave (orientativas) -->
-  <meta name="keywords" content="vino Pérez Zeledón, cata de vinos, sommelier, asesoría de vinos, maridajes, vinoteca, zona sur, Cava Gourmet Market, Nazareth Padilla Montero">
-
-  <!-- Canonical -->
+  <!-- Canonical + AMP -->
   <link rel="canonical" href="https://buenasbox.github.io/NazarethPM/">
   <link rel="amphtml" href="https://buenasbox.github.io/NazarethPM/amp.html">
-  
-  <!-- Preloads de imágenes clave (mejor LCP) -->
-  <link rel="preload" as="image" href="./assets/cava-gourmet-market-logo-zona-sur.webp" />
-  <link rel="preload" as="image" href="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp" />
+
+  <!-- Preloads (mejor LCP) -->
+  <link rel="preload" as="image" href="./assets/cava-gourmet-market-logo-zona-sur.webp">
+  <link rel="preload" as="image" href="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Nazareth Padilla Montero — Sommelier & Asesora de Vinos">
@@ -77,6 +75,7 @@
     "@id":"https://buenasbox.github.io/NazarethPM/#cava",
     "name":"Cava Gourmet Market",
     "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
+    "logo":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
     "url":"https://buenasbox.github.io/NazarethPM/",
     "telephone":"+50684483983",
     "address":{
@@ -85,6 +84,7 @@
       "addressRegion":"San José",
       "addressCountry":"CR"
     },
+    "areaServed":"Pérez Zeledón, Zona Brunca, Costa Rica",
     "priceRange":"$$",
     "servesCuisine":"Wine",
     "sameAs":[
@@ -144,7 +144,14 @@
     },
     "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
     "organizer":{"@type":"Organization","name":"Cava Gourmet Market","url":"https://buenasbox.github.io/NazarethPM/"},
-    "performer":{"@type":"Person","name":"Nazareth Padilla Montero"}
+    "performer":{"@type":"Person","name":"Nazareth Padilla Montero"},
+    "offers":{
+      "@type":"Offer",
+      "price":"25000",
+      "priceCurrency":"CRC",
+      "availability":"https://schema.org/InStock",
+      "url":"https://buenasbox.github.io/NazarethPM/#after-office"
+    }
   }
   </script>
 </head>
@@ -156,7 +163,8 @@
     <header>
       <div class="brand">
         <img src="./assets/cava-gourmet-market-logo-zona-sur.webp"
-             alt="Logo de Cava Gourmet Market — tienda de vinos en Pérez Zeledón">
+             alt="Logo de Cava Gourmet Market — tienda de vinos en Pérez Zeledón"
+             width="128" height="128" loading="eager" decoding="async">
         <div>
           <div class="tag">Cava Gourmet Market</div>
           <h1>Nazareth Padilla Montero — Sommelier & Asesora de Vinos</h1>
@@ -173,7 +181,7 @@
       <div>
         <img class="avatar" src="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp"
              alt="Sommelier Nazareth Padilla Montero — catas y maridajes en Pérez Zeledón, Zona Sur"
-             width="600" height="600" decoding="async">
+             width="600" height="600" loading="eager" decoding="async">
       </div>
       <div>
         <h2>Sobre mí</h2>
@@ -217,7 +225,7 @@
     // Año dinámico
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Registro del Service Worker (si existe)
+    // Registro del Service Worker (si existe en el repo)
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./service-worker.js').catch(console.error);
@@ -225,4 +233,4 @@
     }
   </script>
 </body>
-</html>
+  </html>
