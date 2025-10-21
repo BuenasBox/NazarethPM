@@ -16,7 +16,7 @@
   <link rel="canonical" href="https://buenasbox.github.io/NazarethPM/">
   <link rel="amphtml" href="https://buenasbox.github.io/NazarethPM/amp.html">
 
-  <!-- Preloads para mejor LCP -->
+  <!-- Preloads -->
   <link rel="preload" as="image" href="./assets/cava-gourmet-market-logo-zona-sur.webp">
   <link rel="preload" as="image" href="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp">
 
@@ -69,7 +69,7 @@
     gtag('config', 'G-4PJ8CKKP45');
   </script>
 
-  <!-- JSON-LD: LocalBusiness (Cava) con @id=#org -->
+  <!-- JSON-LD: LocalBusiness (@id=#org) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -101,7 +101,7 @@
   }
   </script>
 
-  <!-- JSON-LD: Person (Nazareth) con @id=#person -->
+  <!-- JSON-LD: Person (@id=#person) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -119,61 +119,61 @@
   }
   </script>
 
-  <!-- JSON-LD: EventSeries (After Office recurrente con fechas + precio) -->
+  <!-- JSON-LD: EventSeries (recurrente con fechas + precio) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "EventSeries",
-    "@id": "https://buenasbox.github.io/NazarethPM/#after-office",
-    "name": "After Office — Wine Experience",
-    "description": "Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
-    "image": "https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
+    "@context":"https://schema.org",
+    "@type":"EventSeries",
+    "@id":"https://buenasbox.github.io/NazarethPM/#after-office",
+    "name":"After Office — Wine Experience",
+    "description":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
+    "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
 
-    "startDate": "2025-10-23T19:30:00-06:00",
-    "endDate":   "2025-10-23T22:30:00-06:00",
+    "startDate":"2025-10-23T19:30:00-06:00",
+    "endDate":"2025-10-23T22:30:00-06:00",
 
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus":"https://schema.org/EventScheduled",
 
-    "location": {
-      "@type": "Place",
-      "name": "Cava Gourmet Market",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Barrio Daniel Flores, frente a Plaza Monte General",
-        "addressLocality": "Pérez Zeledón",
-        "addressRegion": "San José",
-        "postalCode": "11901",
-        "addressCountry": "CR"
+    "location":{
+      "@type":"Place",
+      "name":"Cava Gourmet Market",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"Barrio Daniel Flores, frente a Plaza Monte General",
+        "addressLocality":"Pérez Zeledón",
+        "addressRegion":"San José",
+        "postalCode":"11901",
+        "addressCountry":"CR"
       }
     },
 
-    "organizer": {"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"},
-    "performer": {"@type":"Person","@id":"https://buenasbox.github.io/NazarethPM/#person"},
+    "organizer":{"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"},
+    "performer":{"@type":"Person","@id":"https://buenasbox.github.io/NazarethPM/#person"},
 
-    "offers": {
-      "@type": "Offer",
-      "price": "25000",
-      "priceCurrency": "CRC",
-      "availability": "https://schema.org/InStock",
-      "url": "https://buenasbox.github.io/NazarethPM/#after-office"
+    "offers":{
+      "@type":"Offer",
+      "price":"25000",
+      "priceCurrency":"CRC",
+      "availability":"https://schema.org/InStock",
+      "url":"https://buenasbox.github.io/NazarethPM/#after-office"
     },
 
-    "eventSchedule": {
-      "@type": "Schedule",
-      "repeatFrequency": "P1W",
-      "byDay": [
-        "https://schema.org/Thursday",
-        "https://schema.org/Friday"
-      ],
-      "startTime": "19:30",
-      "endTime": "22:30",
-      "scheduleTimezone": "America/Costa_Rica",
-      "startDate": "2025-10-23",
-      "endDate": "2025-12-31"
+    "eventSchedule":{
+      "@type":"Schedule",
+      "repeatFrequency":"P1W",
+      "byDay":["https://schema.org/Thursday","https://schema.org/Friday"],
+      "startTime":"19:30",
+      "endTime":"22:30",
+      "scheduleTimezone":"America/Costa_Rica",
+      "startDate":"2025-10-23",
+      "endDate":"2025-12-31"
     }
   }
   </script>
+
+  <!-- CONTENEDOR donde inyectaremos dinámicamente los 2 Event -->
+  <script id="event-jsonld-dynamic" type="application/ld+json"></script>
 </head>
 
 <body>
@@ -192,9 +192,7 @@
         </div>
       </div>
       <div style="margin-left:auto; display:flex; gap:10px; flex-wrap:wrap;">
-        <!-- Botón principal usando Bitly (rastreable) -->
         <a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener" target="_blank">🌐 Ver perfil y reservar cata</a>
-        <!-- WhatsApp directo (contacto) -->
         <a class="cta" href="https://wa.me/50684483983?text=Hola%20Nazareth,%20quiero%20reservar%20una%20cata%20privada" rel="nofollow noopener" target="_blank">💬 WhatsApp</a>
       </div>
     </header>
@@ -239,7 +237,6 @@
       <h2>Contacto</h2>
       <p class="muted">WhatsApp: <a href="https://wa.me/50684483983" target="_blank" rel="nofollow">+506 8448 3983</a></p>
       <p class="muted">Email: <a href="mailto:hola@cavagourmet.com">hola@cavagourmet.com</a></p>
-      <!-- Segundo CTA visible con Bitly por si el usuario llega hasta el final -->
       <p><a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener" target="_blank">🌐 Ir al sitio oficial</a></p>
     </section>
 
@@ -248,9 +245,79 @@
     </footer>
   </div>
 
+  <!-- Script: genera/actualiza 2 próximos "Event" (jueves/viernes) en JSON-LD -->
   <script>
+    // Utilidad de fechas (CR -06:00 fijo)
+    function formatISODate(date, hh, mm) {
+      const y = date.getFullYear();
+      const m = String(date.getMonth()+1).padStart(2,'0');
+      const d = String(date.getDate()).padStart(2,'0');
+      const sh = String(hh).padStart(2,'0');
+      const sm = String(mm).padStart(2,'0');
+      // Costa Rica UTC-06:00 (sin horario de verano)
+      return `${y}-${m}-${d}T${sh}:${sm}:00-06:00`;
+    }
+    function nextDow(start, dow) {
+      // dow: 0=Dom ... 6=Sáb. Jue=4, Vie=5
+      const d = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+      const cur = d.getDay();
+      const delta = (dow - cur + 7) % 7 || 7; // siempre próxima ocurrencia (no hoy)
+      d.setDate(d.getDate() + delta);
+      return d;
+    }
+    function buildEvent(date, idSuffix) {
+      const startISO = formatISODate(date, 19, 30);
+      const endISO   = formatISODate(date, 22, 30);
+      const y = date.getFullYear(), m = String(date.getMonth()+1).padStart(2,'0'), d = String(date.getDate()).padStart(2,'0');
+      const id = `https://buenasbox.github.io/NazarethPM/#after-office-${y}-${m}-${d}`;
+      return {
+        "@context":"https://schema.org",
+        "@type":"Event",
+        "@id": id,
+        "name":"After Office — Wine Experience",
+        "description":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
+        "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
+        "startDate": startISO,
+        "endDate": endISO,
+        "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus":"https://schema.org/EventScheduled",
+        "location":{
+          "@type":"Place",
+          "name":"Cava Gourmet Market",
+          "address":{
+            "@type":"PostalAddress",
+            "streetAddress":"Barrio Daniel Flores, frente a Plaza Monte General",
+            "addressLocality":"Pérez Zeledón",
+            "addressRegion":"San José",
+            "postalCode":"11901",
+            "addressCountry":"CR"
+          }
+        },
+        "organizer":{"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"},
+        "performer":{"@type":"Person","@id":"https://buenasbox.github.io/NazarethPM/#person"},
+        "offers":{
+          "@type":"Offer",
+          "price":"25000",
+          "priceCurrency":"CRC",
+          "availability":"https://schema.org/InStock",
+          "url":"https://buenasbox.github.io/NazarethPM/#after-office"
+        }
+      };
+    }
+    (function injectUpcomingEvents(){
+      const now = new Date();
+      const nextThu = nextDow(now, 4); // Jueves
+      const nextFri = nextDow(now, 5); // Viernes
+      const events = [ buildEvent(nextThu, 'thu'), buildEvent(nextFri, 'fri') ];
+      const scriptEl = document.getElementById('event-jsonld-dynamic');
+      if (scriptEl) {
+        scriptEl.textContent = JSON.stringify(events, null, 2);
+      }
+    })();
+
     // Año dinámico
     document.getElementById('y').textContent = new Date().getFullYear();
+
     // Registrar SW si existe
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -259,4 +326,4 @@
     }
   </script>
 </body>
-</html>
+                                                                                                                                                </html>
