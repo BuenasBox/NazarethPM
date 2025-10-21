@@ -1,0 +1,122 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "geo": "https://schema.org/GeoCoordinates"
+  },
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://buenasbox.github.io/NazarethPM/#nazareth",
+      "name": "Nazareth Padilla Montero",
+      "alternateName": "Nazareth Wine Journey",
+      "jobTitle": "Sommelier y Asesora de Vinos",
+      "description": "Sommelier certificada y asesora de vinos en la Zona Brunca de Costa Rica. Creadora de experiencias de cata, educación sensorial y maridaje en Cava Gourmet Market.",
+      "image": "https://buenasbox.github.io/NazarethPM/assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png",
+      "url": "https://buenasbox.github.io/NazarethPM/",
+      "telephone": "+50684483983",
+      "email": "nazareth@cavagourmet.com",
+      "worksFor": {
+        "@id": "https://buenasbox.github.io/NazarethPM/#cava"
+      },
+      "affiliation": [
+        "Cava Gourmet Market",
+        "Master Sommeliers Organization"
+      ],
+      "knowsAbout": [
+        "Vino",
+        "Cata de vinos",
+        "Maridaje",
+        "Servicio de vinos",
+        "Educación sensorial"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/nazarethwinejourney",
+        "https://www.tiktok.com/@nazarethwinejourney",
+        "https://cr.linkedin.com/in/nazarethpm",
+        "https://www.mastersommeliers.org/sommelier-directory/nazarethpm/"
+      ],
+      "nationality": "CR"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://buenasbox.github.io/NazarethPM/#cava",
+      "name": "Cava Gourmet Market",
+      "brand": "Cava PZ",
+      "url": "https://cavagourmet.com",
+      "logo": "https://buenasbox.github.io/NazarethPM/assets/PhotoRoom-20231102_232057.png",
+      "image": "https://buenasbox.github.io/NazarethPM/assets/PhotoRoom-20231102_232057.png",
+      "description": "Tienda de vinos, experiencias de cata y asesoría en maridaje ubicada en la Zona Brunca de Costa Rica.",
+      "founder": {
+        "@id": "https://buenasbox.github.io/NazarethPM/#nazareth"
+      },
+      "employee": {
+        "@id": "https://buenasbox.github.io/NazarethPM/#nazareth"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pérez Zeledón",
+        "addressRegion": "San José",
+        "addressCountry": "CR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.34,
+        "longitude": -83.67
+      },
+      "areaServed": "Zona Brunca, Costa Rica",
+      "sameAs": [
+        "https://instagram.com/cavapz",
+        "https://cavagourmet.com"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+50684483983",
+        "contactType": "customer service",
+        "areaServed": "CR",
+        "availableLanguage": ["Spanish"]
+      }
+    },
+    {
+      "@type": "Place",
+      "@id": "https://buenasbox.github.io/NazarethPM/#location",
+      "name": "Zona Brunca",
+      "description": "Región vitivinícola emergente en el sur de Costa Rica, conocida por su biodiversidad y cultura gastronómica.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.35,
+        "longitude": -83.55
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pérez Zeledón",
+        "addressRegion": "San José",
+        "addressCountry": "CR"
+      },
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "Costa Rica"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://buenasbox.github.io/NazarethPM/#site",
+      "name": "Nazareth Padilla Montero — Sommelier & Asesora de Vinos",
+      "url": "https://buenasbox.github.io/NazarethPM/",
+      "creator": {
+        "@id": "https://buenasbox.github.io/NazarethPM/#nazareth"
+      },
+      "publisher": {
+        "@id": "https://buenasbox.github.io/NazarethPM/#cava"
+      },
+      "about": {
+        "@id": "https://buenasbox.github.io/NazarethPM/#location"
+      },
+      "inLanguage": "es-CR",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.google.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
