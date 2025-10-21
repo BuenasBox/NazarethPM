@@ -9,19 +9,17 @@
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="google-site-verification" content="dSD-vexOW-35dT3fkPjhbjKohgcjeQeJNurQCw7Qbjw">
 
-  <!-- AMP runtime -->
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-
-  <!-- AMP analytics (GA4) -->
-  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph básico -->
   <meta property="og:title" content="Nazareth Padilla Montero — Sommelier & Asesora de Vinos">
   <meta property="og:description" content="Catas guiadas, maridajes y asesoría personalizada en Pérez Zeledón. Cava Gourmet Market.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://buenasbox.github.io/NazarethPM/">
   <meta property="og:image" content="https://buenasbox.github.io/NazarethPM/assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp">
-  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- AMP runtime -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- AMP analytics (GA4) -->
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
   <!-- AMP boilerplate -->
   <style amp-boilerplate>
@@ -35,11 +33,7 @@
     @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
     @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
-  <noscript>
-    <style amp-boilerplate>
-      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
-    </style>
-  </noscript>
+  <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
   <!-- Estilos AMP -->
   <style amp-custom>
@@ -68,12 +62,12 @@
     @media(max-width:860px){ .grid{grid-template-columns:1fr} header{flex-wrap:wrap} .cols{grid-template-columns:1fr} }
   </style>
 
-  <!-- JSON-LD: LocalBusiness -->
+  <!-- JSON-LD: LocalBusiness (@id=#org) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"LocalBusiness",
-    "@id":"https://buenasbox.github.io/NazarethPM/#cava",
+    "@id":"https://buenasbox.github.io/NazarethPM/#org",
     "name":"Cava Gourmet Market",
     "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
     "url":"https://buenasbox.github.io/NazarethPM/",
@@ -100,12 +94,12 @@
   }
   </script>
 
-  <!-- JSON-LD: Person -->
+  <!-- JSON-LD: Person (@id=#person) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Person",
-    "@id":"https://buenasbox.github.io/NazarethPM/#nazareth",
+    "@id":"https://buenasbox.github.io/NazarethPM/#person",
     "name":"Nazareth Padilla Montero",
     "jobTitle":"Sommelier & Asesora de Vinos",
     "image":"https://buenasbox.github.io/NazarethPM/assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp",
@@ -114,11 +108,11 @@
       "https://www.instagram.com/nazarethwinejourney",
       "https://cr.linkedin.com/in/nazarethpm"
     ],
-    "worksFor":{"@type":"Organization","name":"Cava Gourmet Market","url":"https://buenasbox.github.io/NazarethPM/"}
+    "worksFor":{"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"}
   }
   </script>
 
-  <!-- JSON-LD: EventSeries (After Office recurrente con precio) -->
+  <!-- JSON-LD: EventSeries (recurrente con fechas + precio) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -127,6 +121,13 @@
     "name":"After Office — Wine Experience",
     "description":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
     "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
+
+    "startDate":"2025-10-23T19:30:00-06:00",
+    "endDate":"2025-10-23T22:30:00-06:00",
+
+    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus":"https://schema.org/EventScheduled",
+
     "location":{
       "@type":"Place",
       "name":"Cava Gourmet Market",
@@ -139,11 +140,18 @@
         "addressCountry":"CR"
       }
     },
-    "organizer":{"@type":"Organization","name":"Cava Gourmet Market","url":"https://buenasbox.github.io/NazarethPM/"},
-    "performer":{"@type":"Person","name":"Nazareth Padilla Montero","url":"https://buenasbox.github.io/NazarethPM/"},
-    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus":"https://schema.org/EventScheduled",
-    "offers":{"@type":"Offer","price":"25000","priceCurrency":"CRC","availability":"https://schema.org/InStock","url":"https://buenasbox.github.io/NazarethPM/"},
+
+    "organizer":{"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"},
+    "performer":{"@type":"Person","@id":"https://buenasbox.github.io/NazarethPM/#person"},
+
+    "offers":{
+      "@type":"Offer",
+      "price":"25000",
+      "priceCurrency":"CRC",
+      "availability":"https://schema.org/InStock",
+      "url":"https://buenasbox.github.io/NazarethPM/#after-office"
+    },
+
     "eventSchedule":{
       "@type":"Schedule",
       "repeatFrequency":"P1W",
@@ -163,7 +171,8 @@
     <!-- Encabezado -->
     <header>
       <div class="brand">
-        <amp-img class="logo" src="./assets/cava-gourmet-market-logo-zona-sur.webp"
+        <amp-img class="logo"
+                 src="./assets/cava-gourmet-market-logo-zona-sur.webp"
                  alt="Logo de Cava Gourmet Market — tienda de vinos en Pérez Zeledón"
                  width="64" height="64" layout="fixed"></amp-img>
         <div>
@@ -173,7 +182,8 @@
         </div>
       </div>
       <div style="margin-left:auto">
-        <a class="cta" href="https://wa.me/50684483983?text=Hola%20Nazareth,%20quiero%20reservar%20una%20cata%20privada" rel="nofollow noopener">Reservar por WhatsApp</a>
+        <!-- CTA con enlace corto (no abre nueva pestaña en AMP) -->
+        <a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener">🌐 Ver perfil y reservar cata</a>
       </div>
     </header>
 
@@ -218,21 +228,27 @@
       <h2>Contacto</h2>
       <p class="muted">WhatsApp: <a href="https://wa.me/50684483983" rel="nofollow">+506 8448 3983</a></p>
       <p class="muted">Email: <a href="mailto:hola@cavagourmet.com">hola@cavagourmet.com</a></p>
+      <p><a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener">🌐 Ir al sitio oficial</a></p>
     </section>
 
     <footer>
-      © <span id="y">2025</span> Cava Gourmet Market · Pérez Zeledón, Costa Rica
+      © 2025 Cava Gourmet Market · Pérez Zeledón, Costa Rica
     </footer>
   </div>
 
-  <!-- GA4 en AMP -->
+  <!-- GA4 para AMP -->
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
     {
-      "vars": { "gtag_id": "G-4PJ8CKKP45", "config": { "G-4PJ8CKKP45": { "groups": "default" } } },
-      "triggers": { "default pageview": { "on": "visible", "request": "pageview" } }
+      "vars": {
+        "gtag_id": "G-4PJ8CKKP45",
+        "config": { "G-4PJ8CKKP45": { "groups": "default" } }
+      },
+      "triggers": {
+        "default_pageview": { "on": "visible", "request": "pageview" }
+      }
     }
     </script>
   </amp-analytics>
 </body>
-  </html>
+</html>
