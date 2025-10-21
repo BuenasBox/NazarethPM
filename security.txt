@@ -1,0 +1,6 @@
+Contact: mailto:nazareth@cavagourmet.com
+Contact: https://wa.me/50684483983
+Preferred-Languages: es, en
+Canonical: https://buenasbox.github.io/NazarethPM/security.txt
+Policy: https://buenasbox.github.io/NazarethPM/
+Hiring: https://cavagourmet.com
