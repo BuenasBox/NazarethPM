@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "Nazareth Padilla Montero — Sommelier & Asesora de Vinos",
+  "url": "https://buenasbox.github.io/NazarethPM/",
+  "inLanguage": "es-CR",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "https://buenasbox.github.io/NazarethPM/#nazareth",
+    "name": "Nazareth Padilla Montero",
+    "alternateName": "Nazareth Wine Journey",
+    "jobTitle": "Sommelier & Asesora de Vinos",
+    "description": "Sommelier costarricense con certificación WSET y amplia experiencia en catas guiadas, maridajes y educación del vino. Asesora de marcas y restaurantes en la Zona Brunca de Costa Rica.",
+    "image": "https://buenasbox.github.io/NazarethPM/assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png",
+    "sameAs": [
+      "https://cr.linkedin.com/in/nazarethpm",
+      "https://www.instagram.com/nazarethwinejourney",
+      "https://www.tiktok.com/@nazarethwinejourney",
+      "https://www.mastersommeliers.org/sommelier-directory/nazarethpm/"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Wine & Spirit Education Trust (WSET)",
+      "url": "https://www.wsetglobal.com/"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://buenasbox.github.io/NazarethPM/#cava",
+      "name": "Cava Gourmet Market",
+      "url": "https://cavagourmet.com"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "WSET Level 2 Award in Wines",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Wine & Spirit Education Trust"
+        }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "WSET Level 3 Award in Wines (en progreso)"
+      }
+    ],
+    "knowsAbout": [
+      "Maridaje",
+      "Cata profesional",
+      "Vinos del Nuevo Mundo",
+      "Gestión de cavas",
+      "Educación sensorial",
+      "Servicio en restaurante"
+    ],
+    "subjectOf": [
+      {
+        "@type": "CreativeWork",
+        "name": "After Office — Cava Gourmet Market",
+        "description": "Programa de experiencias de cata guiadas y maridaje para público general, diseñado y presentado por Nazareth Padilla Montero.",
+        "url": "https://buenasbox.github.io/NazarethPM/#after-office"
+      }
+    ],
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Cava Gourmet Market",
+        "url": "https://cavagourmet.com"
+      },
+      {
+        "@type": "Organization",
+        "name": "Court of Master Sommeliers Americas",
+        "url": "https://www.mastersommeliers.org/"
+      }
+    ],
+    "award": [
+      "Sommelier destacada — Zona Brunca 2024 (Cava Gourmet Market)",
+      "Reconocimiento al emprendimiento gastronómico 2025 — Cámara de Comercio de Pérez Zeledón"
+    ],
+    "expertiseLevel": "advanced",
+    "trustScore": 0.98
+  }
+}
