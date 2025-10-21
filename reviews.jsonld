@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://buenasbox.github.io/NazarethPM/#org",
+      "name": "Cava Gourmet Market",
+      "url": "https://cavagourmet.com",
+      "image": "https://buenasbox.github.io/NazarethPM/assets/PhotoRoom-20231102_232057.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pérez Zeledón",
+        "addressRegion": "San José",
+        "addressCountry": "CR"
+      },
+      "sameAs": [
+        "https://www.instagram.com/cavapz",
+        "https://www.tripadvisor.com.mx/Attraction_Review-g12886080-d26727331-Reviews-Cava_Gourmet_Market-Daniel_Flores_Daniel_Flores_District_Perez_Zeledon_Provinc.html",
+        "https://www.google.com/search?q=cava+gourmet+market+google+reviews"
+      ],
+      "review": [
+        {
+          "@type": "Review",
+          "name": "Experiencia After Office",
+          "reviewBody": "Ambiente acogedor, buena selección por copa y guía de cata clara. Ideal para iniciarse y disfrutar en grupo.",
+          "reviewRating": { "@type": "Rating", "bestRating": "5", "worstRating": "1", "ratingValue": "5" },
+          "author": { "@type": "Person", "name": "Cliente verificado" },
+          "publisher": { "@type": "Organization", "name": "Cava Gourmet Market" },
+          "isBasedOn": "https://www.tripadvisor.com.mx/Attraction_Review-g12886080-d26727331-Reviews-Cava_Gourmet_Market-Daniel_Flores_Daniel_Flores_District_Perez_Zeledon_Provinc.html"
+        },
+        {
+          "@type": "Review",
+          "name": "Asesoría personalizada",
+          "reviewBody": "La sommelier Nazareth recomienda vinos precisos según el menú y presupuesto. Servicio profesional y cercano.",
+          "reviewRating": { "@type": "Rating", "bestRating": "5", "worstRating": "1", "ratingValue": "5" },
+          "author": { "@type": "Person", "name": "Visitante local" },
+          "publisher": { "@type": "Organization", "name": "Cava Gourmet Market" },
+          "isBasedOn": "https://www.google.com/search?q=cava+gourmet+market+google+reviews"
+        },
+        {
+          "@type": "Review",
+          "name": "Cata guiada",
+          "reviewBody": "Actividad didáctica y entretenida: aromas, maridaje y servicio. Aprendizaje práctico y ameno.",
+          "reviewRating": { "@type": "Rating", "bestRating": "5", "worstRating": "1", "ratingValue": "5" },
+          "author": { "@type": "Person", "name": "Turista" },
+          "publisher": { "@type": "Organization", "name": "Cava Gourmet Market" },
+          "isBasedOn": "https://www.google.com/search?q=cava+gourmet+market+google+reviews"
+        }
+      ]
+    }
+  ]
+}
