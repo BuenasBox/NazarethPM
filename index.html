@@ -4,19 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Nazareth Padilla Montero — Sommelier & Asesora de Vinos | Cava Gourmet Market</title>
-  <meta name="description" content="Sommelier Nazareth Padilla Montero. Catas guiadas, maridajes y asesoría personalizada de vinos en Pérez Zeledón (Zona Brunca, Costa Rica). Cava Gourmet Market.">
+  <title>Sommelier en Pérez Zeledón | Nazareth Padilla Montero – Cava Gourmet Market</title>
+  <meta name="description" content="Catas guiadas, maridajes y asesoría de vinos con la sommelier Nazareth Padilla Montero en Pérez Zeledón (Zona Brunca, Costa Rica). Reserva por WhatsApp.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="google-site-verification" content="dSD-vexOW-35dT3fkPjhbjKohgcjeQeJNurQCw7Qbjw">
-
-  <!-- Palabras clave orientativas -->
-  <meta name="keywords" content="vino Pérez Zeledón, vinos zona sur, cata de vinos, sommelier, sumiller, asesoría de vinos, maridajes, vinoteca, Cava Gourmet Market, Nazareth Padilla Montero, vino cerca de mí, After Office vino">
+  <meta name="keywords" content="vino Pérez Zeledón, vinos zona sur, cata de vinos, sommelier, sumiller, asesoría de vinos, maridajes, vinoteca, Cava Gourmet Market, Nazareth Padilla Montero, vino cerca de mí, After Office vino, catas privadas, carta de vinos">
 
   <!-- Canonical + AMP -->
   <link rel="canonical" href="https://buenasbox.github.io/NazarethPM/">
   <link rel="amphtml" href="https://buenasbox.github.io/NazarethPM/amp.html">
 
-  <!-- Preloads -->
+  <!-- Preload imágenes clave -->
   <link rel="preload" as="image" href="./assets/cava-gourmet-market-logo-zona-sur.webp">
   <link rel="preload" as="image" href="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp">
 
@@ -41,11 +39,15 @@
       --accent:#8E1F2F; --gold:#B98A3B; --soft:#EFE9E1;
       --shadow:0 10px 30px rgba(0,0,0,.08);
     }
+    *{box-sizing:border-box}
     html,body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:inherit}
     .wrap{max-width:1080px;margin:auto;padding:20px}
     header{display:flex;align-items:center;gap:14px;padding:14px 0}
     header .brand{display:flex;align-items:center;gap:12px}
     header .brand img{width:64px;height:64px;display:block;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.06);object-fit:cover}
+    nav a{margin:0 10px;text-decoration:none;font-weight:700;opacity:.85}
+    nav a:hover{opacity:1}
     h1{font-size:clamp(1.6rem,2.4vw,2.2rem);margin:.2rem 0}
     .tag{font-weight:700;color:#fff;background:var(--accent);border-radius:999px;padding:.35rem .7rem;font-size:.9rem;display:inline-block}
     .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px;margin:14px 0}
@@ -58,15 +60,48 @@
     .badge{display:inline-block;background:var(--soft);border:1px solid #e9e0d7;border-radius:999px;padding:6px 10px;margin:0 8px 8px 0}
     footer{font-size:.9rem;color:var(--muted);padding:28px 0 18px}
     .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    @media(max-width:860px){ .grid{grid-template-columns:1fr} header{flex-wrap:wrap} .cols{grid-template-columns:1fr} }
+    .sticky-wa{position:fixed;right:16px;bottom:16px;z-index:30;display:none}
+    .sticky-wa a{box-shadow:0 8px 20px rgba(0,0,0,.15)}
+    @media(max-width:860px){ .grid{grid-template-columns:1fr} header{flex-wrap:wrap} .cols{grid-template-columns:1fr} .sticky-wa{display:block} }
+    /* FAQ */
+    details{background:#fff;border:1px solid #e9e0d7;border-radius:12px;padding:12px;margin:10px 0}
+    details summary{cursor:pointer;font-weight:800}
+    /* Breadcrumb */
+    .breadcrumb{font-size:.9rem;color:#8a8282;margin-top:6px}
   </style>
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4PJ8CKKP45"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-    gtag('config', 'G-4PJ8CKKP45');
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-4PJ8CKKP45');
+  </script>
+
+  <!-- JSON-LD: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "@id":"https://buenasbox.github.io/NazarethPM/#website",
+    "url":"https://buenasbox.github.io/NazarethPM/",
+    "name":"Nazareth Padilla Montero | Cava Gourmet Market",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://buenasbox.github.io/NazarethPM/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://buenasbox.github.io/NazarethPM/"}
+    ]
+  }
   </script>
 
   <!-- JSON-LD: LocalBusiness (@id=#org) -->
@@ -119,7 +154,7 @@
   }
   </script>
 
-  <!-- JSON-LD: EventSeries (recurrente con fechas + precio) -->
+  <!-- JSON-LD: EventSeries (After Office recurrente con precio) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -172,35 +207,47 @@
   }
   </script>
 
-  <!-- CONTENEDOR donde inyectaremos dinámicamente los 2 Event -->
+  <!-- CONTENEDOR para inyectar dinámicamente 2 Event próximos -->
   <script id="event-jsonld-dynamic" type="application/ld+json"></script>
+
+  <!-- JSON-LD: FAQPage (requiere sección visible) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"¿Dónde se realizan las catas?","acceptedAnswer":{"@type":"Answer","text":"En Cava Gourmet Market (Pérez Zeledón) o en tu ubicación por acuerdo previo."}},
+      {"@type":"Question","name":"¿Qué incluye el After Office?","acceptedAnswer":{"@type":"Answer","text":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier. Precio ₡25,000."}},
+      {"@type":"Question","name":"¿Ofrecen asesoría de carta de vinos?","acceptedAnswer":{"@type":"Answer","text":"Sí, diseñamos y optimizamos tu carta con enfoque en rentabilidad y experiencia."}}
+    ]
+  }
+  </script>
 </head>
 
 <body>
   <div class="wrap">
-
     <!-- Encabezado -->
-    <header>
+    <header id="inicio">
       <div class="brand">
-        <img src="./assets/cava-gourmet-market-logo-zona-sur.webp"
-             alt="Logo de Cava Gourmet Market — tienda de vinos en Pérez Zeledón"
-             width="64" height="64" decoding="async">
+        <img src="./assets/cava-gourmet-market-logo-zona-sur.webp" alt="Logo de Cava Gourmet Market — tienda de vinos en Pérez Zeledón" width="64" height="64" decoding="async" fetchpriority="high">
         <div>
           <span class="tag">Cava Gourmet Market</span>
           <h1>Nazareth Padilla Montero — Sommelier & Asesora de Vinos</h1>
-          <div class="muted">Pérez Zeledón (Zona Brunca), Costa Rica</div>
+          <div class="breadcrumb">Inicio</div>
         </div>
       </div>
-      <div style="margin-left:auto; display:flex; gap:10px; flex-wrap:wrap;">
-        <a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener" target="_blank">🌐 Ver perfil y reservar cata</a>
-        <a class="cta" href="https://wa.me/50684483983?text=Hola%20Nazareth,%20quiero%20reservar%20una%20cata%20privada" rel="nofollow noopener" target="_blank">💬 WhatsApp</a>
-      </div>
+      <nav style="margin-left:auto">
+        <a href="#servicios">Servicios</a>
+        <a href="#after-office">After Office</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </header>
 
     <!-- Presentación -->
     <section class="card grid" id="sobre-mi">
       <div>
-        <img class="avatar" src="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp"
+        <img class="avatar"
+             src="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp"
              alt="Sommelier Nazareth Padilla Montero — catas y maridajes en Pérez Zeledón, Zona Sur"
              width="600" height="600" decoding="async" loading="eager">
       </div>
@@ -208,6 +255,10 @@
         <h2>Sobre mí</h2>
         <p>Apasionada por el vino, la educación sensorial y el servicio. Desde Cava Gourmet Market, diseño experiencias de cata, maridajes y asesoría personalizada para hogares y restaurantes de la Zona Sur.</p>
         <p class="muted">LinkedIn: <a href="https://cr.linkedin.com/in/nazarethpm" target="_blank" rel="nofollow">nazarethpm</a> · Instagram: <a href="https://www.instagram.com/nazarethwinejourney" target="_blank" rel="nofollow">@nazarethwinejourney</a></p>
+        <p style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener" target="_blank">🌐 Ver perfil y reservar cata</a>
+          <a class="cta" href="https://wa.me/50684483983?text=Hola%20Nazareth,%20quiero%20reservar%20una%20cata%20privada&utm_source=site&utm_medium=button&utm_campaign=whatsapp" rel="nofollow noopener" target="_blank">💬 WhatsApp</a>
+        </p>
       </div>
     </section>
 
@@ -222,6 +273,13 @@
       </ul>
     </section>
 
+    <!-- After Office (anchor para navegación) -->
+    <section class="card" id="after-office">
+      <h2>After Office — Wine Experience</h2>
+      <p>Jueves y viernes desde las <strong>7:30 pm</strong>. Cupos limitados, previa confirmación. <strong>Precio: ₡25,000</strong>.</p>
+      <p><a class="cta" href="https://bit.ly/nazarethwine" target="_blank" rel="nofollow noopener">Reservar y detalles</a></p>
+    </section>
+
     <!-- Opiniones -->
     <section class="card" id="opiniones">
       <h2>Opiniones</h2>
@@ -230,6 +288,14 @@
         <p class="muted">“Asesoría precisa para nuestro menú.” — Visitante local</p>
       </div>
       <a class="cta" href="https://www.google.com/search?q=cava+gourmet+market+google+reviews" target="_blank" rel="nofollow">Ver reseñas</a>
+    </section>
+
+    <!-- FAQ visible (parea con FAQPage JSON-LD) -->
+    <section class="card" id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details><summary>¿Dónde se realizan las catas?</summary><p>En Cava Gourmet Market (Pérez Zeledón) o en tu ubicación por acuerdo previo.</p></details>
+      <details><summary>¿Qué incluye el After Office?</summary><p>Vinos por copa, maridajes ligeros y guía de cata con la sommelier. Precio ₡25,000.</p></details>
+      <details><summary>¿Ofrecen asesoría de carta de vinos?</summary><p>Sí, diseñamos y optimizamos tu carta con enfoque en rentabilidad y experiencia.</p></details>
     </section>
 
     <!-- Contacto -->
@@ -245,27 +311,30 @@
     </footer>
   </div>
 
-  <!-- Script: genera/actualiza 2 próximos "Event" (jueves/viernes) en JSON-LD -->
+  <!-- Sticky WhatsApp (mobile) -->
+  <div class="sticky-wa">
+    <a class="cta" href="https://wa.me/50684483983?text=Hola%20Nazareth,%20quiero%20reservar%20una%20cata%20privada&utm_source=site&utm_medium=sticky&utm_campaign=whatsapp" rel="nofollow noopener" target="_blank">💬 WhatsApp</a>
+  </div>
+
+  <!-- Script: inyecta 2 próximos "Event" (jueves/viernes) como JSON-LD -->
   <script>
-    // Utilidad de fechas (CR -06:00 fijo)
     function formatISODate(date, hh, mm) {
       const y = date.getFullYear();
       const m = String(date.getMonth()+1).padStart(2,'0');
       const d = String(date.getDate()).padStart(2,'0');
       const sh = String(hh).padStart(2,'0');
       const sm = String(mm).padStart(2,'0');
-      // Costa Rica UTC-06:00 (sin horario de verano)
-      return `${y}-${m}-${d}T${sh}:${sm}:00-06:00`;
+      return `${y}-${m}-${d}T${sh}:${sm}:00-06:00`; // CR UTC-06:00
     }
     function nextDow(start, dow) {
-      // dow: 0=Dom ... 6=Sáb. Jue=4, Vie=5
       const d = new Date(start.getFullYear(), start.getMonth(), start.getDate());
-      const cur = d.getDay();
-      const delta = (dow - cur + 7) % 7 || 7; // siempre próxima ocurrencia (no hoy)
+      const cur = d.getDay();  // 0=Dom ... 6=Sáb
+      let delta = (dow - cur + 7) % 7;
+      if (delta === 0) delta = 7; // siempre la próxima, no hoy
       d.setDate(d.getDate() + delta);
       return d;
     }
-    function buildEvent(date, idSuffix) {
+    function buildEvent(date) {
       const startISO = formatISODate(date, 19, 30);
       const endISO   = formatISODate(date, 22, 30);
       const y = date.getFullYear(), m = String(date.getMonth()+1).padStart(2,'0'), d = String(date.getDate()).padStart(2,'0');
@@ -308,11 +377,9 @@
       const now = new Date();
       const nextThu = nextDow(now, 4); // Jueves
       const nextFri = nextDow(now, 5); // Viernes
-      const events = [ buildEvent(nextThu, 'thu'), buildEvent(nextFri, 'fri') ];
+      const events = [ buildEvent(nextThu), buildEvent(nextFri) ];
       const scriptEl = document.getElementById('event-jsonld-dynamic');
-      if (scriptEl) {
-        scriptEl.textContent = JSON.stringify(events, null, 2);
-      }
+      if (scriptEl) { scriptEl.textContent = JSON.stringify(events, null, 2); }
     })();
 
     // Año dinámico
@@ -326,4 +393,4 @@
     }
   </script>
 </body>
-                                                                                                                                                </html>
+    </html>
