@@ -1,0 +1,14 @@
+/* TEAM */
+Sommelier & Asesora de Vinos: Nazareth Padilla Montero
+Developer & SEO Advisor: Erick “BuenasBox” Madriz
+Brand: Cava Gourmet Market
+Location: Zona Brunca, Pérez Zeledón, Costa Rica
+Website: https://buenasbox.github.io/NazarethPM/
+LinkedIn: https://cr.linkedin.com/in/nazarethpm
+Instagram: https://www.instagram.com/nazarethwinejourney
+TikTok: https://www.tiktok.com/@nazarethwinejourney
+WhatsApp: +50684483983
+Email: nazareth@cavagourmet.com
+
+/* THANKS */
+Built with GitHub Pages · Designed by BuenasBox
