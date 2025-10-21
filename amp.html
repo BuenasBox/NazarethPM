@@ -9,7 +9,7 @@
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="google-site-verification" content="dSD-vexOW-35dT3fkPjhbjKohgcjeQeJNurQCw7Qbjw">
 
-  <!-- Open Graph básico -->
+  <!-- OG -->
   <meta property="og:title" content="Nazareth Padilla Montero — Sommelier & Asesora de Vinos">
   <meta property="og:description" content="Catas guiadas, maridajes y asesoría personalizada en Pérez Zeledón. Cava Gourmet Market.">
   <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
 
   <!-- AMP runtime -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <!-- AMP analytics (GA4) -->
+  <!-- AMP analytics -->
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
   <!-- AMP boilerplate -->
@@ -112,7 +112,7 @@
   }
   </script>
 
-  <!-- JSON-LD: EventSeries (recurrente con fechas + precio) -->
+  <!-- JSON-LD: EventSeries -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -121,13 +121,10 @@
     "name":"After Office — Wine Experience",
     "description":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
     "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
-
     "startDate":"2025-10-23T19:30:00-06:00",
     "endDate":"2025-10-23T22:30:00-06:00",
-
     "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
     "eventStatus":"https://schema.org/EventScheduled",
-
     "location":{
       "@type":"Place",
       "name":"Cava Gourmet Market",
@@ -140,10 +137,8 @@
         "addressCountry":"CR"
       }
     },
-
     "organizer":{"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"},
     "performer":{"@type":"Person","@id":"https://buenasbox.github.io/NazarethPM/#person"},
-
     "offers":{
       "@type":"Offer",
       "price":"25000",
@@ -151,7 +146,6 @@
       "availability":"https://schema.org/InStock",
       "url":"https://buenasbox.github.io/NazarethPM/#after-office"
     },
-
     "eventSchedule":{
       "@type":"Schedule",
       "repeatFrequency":"P1W",
@@ -163,6 +157,66 @@
       "endDate":"2025-12-31"
     }
   }
+  </script>
+
+  <!-- JSON-LD: Event (estáticos para AMP) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context":"https://schema.org",
+      "@type":"Event",
+      "@id":"https://buenasbox.github.io/NazarethPM/#after-office-2025-10-23",
+      "name":"After Office — Wine Experience",
+      "description":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
+      "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
+      "startDate":"2025-10-23T19:30:00-06:00",
+      "endDate":"2025-10-23T22:30:00-06:00",
+      "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus":"https://schema.org/EventScheduled",
+      "location":{
+        "@type":"Place",
+        "name":"Cava Gourmet Market",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"Barrio Daniel Flores, frente a Plaza Monte General",
+          "addressLocality":"Pérez Zeledón",
+          "addressRegion":"San José",
+          "postalCode":"11901",
+          "addressCountry":"CR"
+        }
+      },
+      "organizer":{"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"},
+      "performer":{"@type":"Person","@id":"https://buenasbox.github.io/NazarethPM/#person"},
+      "offers":{"@type":"Offer","price":"25000","priceCurrency":"CRC","availability":"https://schema.org/InStock","url":"https://buenasbox.github.io/NazarethPM/#after-office"}
+    },
+    {
+      "@context":"https://schema.org",
+      "@type":"Event",
+      "@id":"https://buenasbox.github.io/NazarethPM/#after-office-2025-10-24",
+      "name":"After Office — Wine Experience",
+      "description":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
+      "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
+      "startDate":"2025-10-24T19:30:00-06:00",
+      "endDate":"2025-10-24T22:30:00-06:00",
+      "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus":"https://schema.org/EventScheduled",
+      "location":{
+        "@type":"Place",
+        "name":"Cava Gourmet Market",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"Barrio Daniel Flores, frente a Plaza Monte General",
+          "addressLocality":"Pérez Zeledón",
+          "addressRegion":"San José",
+          "postalCode":"11901",
+          "addressCountry":"CR"
+        }
+      },
+      "organizer":{"@type":"Organization","@id":"https://buenasbox.github.io/NazarethPM/#org"},
+      "performer":{"@type":"Person","@id":"https://buenasbox.github.io/NazarethPM/#person"},
+      "offers":{"@type":"Offer","price":"25000","priceCurrency":"CRC","availability":"https://schema.org/InStock","url":"https://buenasbox.github.io/NazarethPM/#after-office"}
+    }
+  ]
   </script>
 </head>
 <body>
@@ -182,7 +236,6 @@
         </div>
       </div>
       <div style="margin-left:auto">
-        <!-- CTA con enlace corto (no abre nueva pestaña en AMP) -->
         <a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener">🌐 Ver perfil y reservar cata</a>
       </div>
     </header>
@@ -251,4 +304,4 @@
     </script>
   </amp-analytics>
 </body>
-</html>
+        </html>
