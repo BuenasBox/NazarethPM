@@ -1,6 +1,9 @@
-Contact: mailto:nazareth@cavagourmet.com
-Contact: https://wa.me/50684483983
+Contact: mailto:info@cavagourmet.com
+Contact: https://me.whatsapp/+50684483983
+Encryption: https://cavagourmet.com/pgp-key.txt
+Acknowledgements: https://buenasbox.github.io/NazarethPM/#credits
 Preferred-Languages: es, en
-Canonical: https://buenasbox.github.io/NazarethPM/security.txt
-Policy: https://buenasbox.github.io/NazarethPM/
-Hiring: https://cavagourmet.com
+Canonical: https://buenasbox.github.io/NazarethPM/.well-known/security.txt
+Policy: https://cavagourmet.com/politica-seguridad
+Hiring: https://cavagourmet.com/contacto
+Expires: 2026-10-21T00:00:00Z
