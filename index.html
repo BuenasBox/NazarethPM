@@ -271,5 +271,16 @@
   }
   </script>
 
+  <!-- ========= Registro del Service Worker (scope GitHub Pages) ========= -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/NazarethPM/service-worker.js', { scope: '/NazarethPM/' })
+          .then(reg => console.log('SW registrado:', reg.scope))
+          .catch(err => console.warn('SW error:', err));
+      });
+    }
+  </script>
+
 </body>
-  </html>
+            </html>
