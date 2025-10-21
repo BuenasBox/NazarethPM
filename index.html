@@ -37,7 +37,7 @@
   <!-- Estilos -->
   <style>
     :root{
-      --bg:#F7F4EF; --card:#fff; --ink:#231F20; --muted:#676161;
+      --bg:#F7F4EF; --card:#fff; --ink:#231F2F; --muted:#676161;
       --accent:#8E1F2F; --gold:#B98A3B; --soft:#EFE9E1;
       --shadow:0 10px 30px rgba(0,0,0,.08);
     }
@@ -69,7 +69,7 @@
     gtag('config', 'G-4PJ8CKKP45');
   </script>
 
-  <!-- JSON-LD: LocalBusiness (Cava) + AggregateRating + Reviews -->
+  <!-- JSON-LD: LocalBusiness (Cava) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -93,11 +93,7 @@
       "https://www.instagram.com/nazarethwinejourney",
       "https://cr.linkedin.com/in/nazarethpm"
     ],
-    "aggregateRating":{
-      "@type":"AggregateRating",
-      "ratingValue":"5",
-      "reviewCount":"12"
-    },
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"12"},
     "review":[
       {"@type":"Review","reviewBody":"Ambiente acogedor y guía de cata excelente.","author":{"@type":"Person","name":"Cliente verificado"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}},
       {"@type":"Review","reviewBody":"Asesoría precisa para nuestro menú.","author":{"@type":"Person","name":"Visitante local"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}}
@@ -119,66 +115,45 @@
       "https://www.instagram.com/nazarethwinejourney",
       "https://cr.linkedin.com/in/nazarethpm"
     ],
-    "worksFor":{
-      "@type":"Organization",
-      "name":"Cava Gourmet Market",
-      "url":"https://buenasbox.github.io/NazarethPM/"
-    }
+    "worksFor":{"@type":"Organization","name":"Cava Gourmet Market","url":"https://buenasbox.github.io/NazarethPM/"}
   }
   </script>
 
-  <!-- JSON-LD: EventSeries (After Office recurrente) -->
+  <!-- JSON-LD: EventSeries (After Office recurrente con precio) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "EventSeries",
-    "@id": "https://buenasbox.github.io/NazarethPM/#after-office",
-    "name": "After Office — Wine Experience",
-    "description": "Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
-    "image": "https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
-    "location": {
-      "@type": "Place",
-      "name": "Cava Gourmet Market",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Barrio Daniel Flores, frente a Plaza Monte General",
-        "addressLocality": "Pérez Zeledón",
-        "addressRegion": "San José",
-        "postalCode": "11901",
-        "addressCountry": "CR"
+    "@context":"https://schema.org",
+    "@type":"EventSeries",
+    "@id":"https://buenasbox.github.io/NazarethPM/#after-office",
+    "name":"After Office — Wine Experience",
+    "description":"Vinos por copa, maridajes ligeros y guía de cata con la sommelier Nazareth. Cupos limitados, previa confirmación. Precio ₡25,000.",
+    "image":"https://buenasbox.github.io/NazarethPM/assets/cava-gourmet-market-logo-zona-sur.webp",
+    "location":{
+      "@type":"Place",
+      "name":"Cava Gourmet Market",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"Barrio Daniel Flores, frente a Plaza Monte General",
+        "addressLocality":"Pérez Zeledón",
+        "addressRegion":"San José",
+        "postalCode":"11901",
+        "addressCountry":"CR"
       }
     },
-    "organizer": {
-      "@type": "Organization",
-      "name": "Cava Gourmet Market",
-      "url": "https://buenasbox.github.io/NazarethPM/"
-    },
-    "performer": {
-      "@type": "Person",
-      "name": "Nazareth Padilla Montero",
-      "url": "https://buenasbox.github.io/NazarethPM/"
-    },
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "offers": {
-      "@type": "Offer",
-      "price": "25000",
-      "priceCurrency": "CRC",
-      "availability": "https://schema.org/InStock",
-      "url": "https://buenasbox.github.io/NazarethPM/"
-    },
-    "eventSchedule": {
-      "@type": "Schedule",
-      "repeatFrequency": "P1W",
-      "byDay": [
-        "https://schema.org/Thursday",
-        "https://schema.org/Friday"
-      ],
-      "startTime": "19:30",
-      "endTime": "22:30",
-      "scheduleTimezone": "America/Costa_Rica",
-      "startDate": "2025-10-23",
-      "endDate": "2025-12-31"
+    "organizer":{"@type":"Organization","name":"Cava Gourmet Market","url":"https://buenasbox.github.io/NazarethPM/"},
+    "performer":{"@type":"Person","name":"Nazareth Padilla Montero","url":"https://buenasbox.github.io/NazarethPM/"},
+    "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus":"https://schema.org/EventScheduled",
+    "offers":{"@type":"Offer","price":"25000","priceCurrency":"CRC","availability":"https://schema.org/InStock","url":"https://buenasbox.github.io/NazarethPM/"},
+    "eventSchedule":{
+      "@type":"Schedule",
+      "repeatFrequency":"P1W",
+      "byDay":["https://schema.org/Thursday","https://schema.org/Friday"],
+      "startTime":"19:30",
+      "endTime":"22:30",
+      "scheduleTimezone":"America/Costa_Rica",
+      "startDate":"2025-10-23",
+      "endDate":"2025-12-31"
     }
   }
   </script>
@@ -199,8 +174,11 @@
           <div class="muted">Pérez Zeledón (Zona Brunca), Costa Rica</div>
         </div>
       </div>
-      <div style="margin-left:auto">
-        <a class="cta" href="https://wa.me/50684483983?text=Hola%20Nazareth,%20quiero%20reservar%20una%20cata%20privada" rel="nofollow noopener" target="_blank">Reservar por WhatsApp</a>
+      <div style="margin-left:auto; display:flex; gap:10px; flex-wrap:wrap;">
+        <!-- Botón principal usando Bitly (rastreable) -->
+        <a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener" target="_blank">🌐 Ver perfil y reservar cata</a>
+        <!-- WhatsApp directo (contacto) -->
+        <a class="cta" href="https://wa.me/50684483983?text=Hola%20Nazareth,%20quiero%20reservar%20una%20cata%20privada" rel="nofollow noopener" target="_blank">💬 WhatsApp</a>
       </div>
     </header>
 
@@ -209,7 +187,7 @@
       <div>
         <img class="avatar" src="./assets/nazareth-padilla-montero-sommelier-perez-zeledon.webp"
              alt="Sommelier Nazareth Padilla Montero — catas y maridajes en Pérez Zeledón, Zona Sur"
-             width="600" height="600" decoding="async">
+             width="600" height="600" decoding="async" loading="eager">
       </div>
       <div>
         <h2>Sobre mí</h2>
@@ -244,6 +222,8 @@
       <h2>Contacto</h2>
       <p class="muted">WhatsApp: <a href="https://wa.me/50684483983" target="_blank" rel="nofollow">+506 8448 3983</a></p>
       <p class="muted">Email: <a href="mailto:hola@cavagourmet.com">hola@cavagourmet.com</a></p>
+      <!-- Segundo CTA visible con Bitly por si el usuario llega hasta el final -->
+      <p><a class="cta" href="https://bit.ly/nazarethwine" rel="nofollow noopener" target="_blank">🌐 Ir al sitio oficial</a></p>
     </section>
 
     <footer>
@@ -254,7 +234,7 @@
   <script>
     // Año dinámico
     document.getElementById('y').textContent = new Date().getFullYear();
-    // Registrar SW si existe (ya lo creaste)
+    // Registrar SW si existe
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('./service-worker.js').catch(console.error);
