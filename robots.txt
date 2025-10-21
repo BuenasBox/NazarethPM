@@ -1,20 +1,24 @@
+# robots.txt – Cava Gourmet Market / Nazareth Padilla Montero
+# Última actualización: 2025-10-21
+# Permite la indexación completa y declara ubicación de sitemap y canonical
+
 User-agent: *
 Allow: /
-Disallow: /draft/
-Disallow: /temp/
-Crawl-delay: 2
 
-# 🌐 Sitio principal
-Sitemap: https://buenasbox.github.io/NazarethPM/sitemap.xml
+# Evita rastreo innecesario de archivos internos
+Disallow: /assets/*.zip$
+Disallow: /assets/*.psd$
+Disallow: /assets/*.ai$
 
-# 🤖 Directivas adicionales para IA y previsualizadores
-User-agent: GPTBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: Google-Extended
-Allow: /
+# Bloquea el cache offline PWA si se indexa como HTML
+Disallow: /service-worker.js
+Disallow: /manifest.json
 
-# 📌 Información del sitio
+# Directrices de rastreo
+Crawl-delay: 5
+
+# Canonical
 Host: buenasbox.github.io
-Clean-param: ref /index.html
+
+# Sitemap XML
+Sitemap: https://buenasbox.github.io/NazarethPM/sitemap.xml
