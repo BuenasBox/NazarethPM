@@ -16,7 +16,7 @@
       "sameAs": [
         "https://www.instagram.com/cavapz",
         "https://www.tripadvisor.com.mx/Attraction_Review-g12886080-d26727331-Reviews-Cava_Gourmet_Market-Daniel_Flores_Daniel_Flores_District_Perez_Zeledon_Provinc.html",
-        "https://www.google.com/search?q=cava+gourmet+market+google+reviews"
+        "https://share.google/u9ZTCiDZMj7ppFLFD"
       ],
       "review": [
         {
@@ -26,7 +26,7 @@
           "reviewRating": { "@type": "Rating", "bestRating": "5", "worstRating": "1", "ratingValue": "5" },
           "author": { "@type": "Person", "name": "Cliente verificado" },
           "publisher": { "@type": "Organization", "name": "Cava Gourmet Market" },
-          "isBasedOn": "https://www.tripadvisor.com.mx/Attraction_Review-g12886080-d26727331-Reviews-Cava_Gourmet_Market-Daniel_Flores_Daniel_Flores_District_Perez_Zeledon_Provinc.html"
+          "isBasedOn": "https://share.google/u9ZTCiDZMj7ppFLFD"
         },
         {
           "@type": "Review",
@@ -35,7 +35,7 @@
           "reviewRating": { "@type": "Rating", "bestRating": "5", "worstRating": "1", "ratingValue": "5" },
           "author": { "@type": "Person", "name": "Visitante local" },
           "publisher": { "@type": "Organization", "name": "Cava Gourmet Market" },
-          "isBasedOn": "https://www.google.com/search?q=cava+gourmet+market+google+reviews"
+          "isBasedOn": "https://share.google/u9ZTCiDZMj7ppFLFD"
         },
         {
           "@type": "Review",
@@ -44,7 +44,7 @@
           "reviewRating": { "@type": "Rating", "bestRating": "5", "worstRating": "1", "ratingValue": "5" },
           "author": { "@type": "Person", "name": "Turista" },
           "publisher": { "@type": "Organization", "name": "Cava Gourmet Market" },
-          "isBasedOn": "https://www.google.com/search?q=cava+gourmet+market+google+reviews"
+          "isBasedOn": "https://share.google/u9ZTCiDZMj7ppFLFD"
         }
       ]
     }
