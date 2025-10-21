@@ -1,15 +1,20 @@
-# robots.txt para https://buenasbox.github.io/NazarethPM/
 User-agent: *
 Allow: /
+Disallow: /draft/
+Disallow: /temp/
+Crawl-delay: 2
 
-# Evitar rastreo de archivos internos
-Disallow: /assets/
-Disallow: /manifest.json
-Disallow: /humans.txt
-Disallow: /security.txt
-
-# Mapa del sitio
+# 🌐 Sitio principal
 Sitemap: https://buenasbox.github.io/NazarethPM/sitemap.xml
 
-# Información del sitio
-Host: https://buenasbox.github.io/NazarethPM/
+# 🤖 Directivas adicionales para IA y previsualizadores
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# 📌 Información del sitio
+Host: buenasbox.github.io
+Clean-param: ref /index.html
