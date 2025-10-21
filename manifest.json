@@ -1,24 +1,47 @@
 {
-  "name": "Nazareth Padilla Montero — Sommelier & Asesora de Vinos",
-  "short_name": "Nazareth PM",
-  "description": "Sommelier y asesora de vinos en Cava Gourmet Market (Zona Brunca, Costa Rica). Experiencias de cata, maridaje y asesoría personalizada.",
+  "name": "Cava Gourmet Market — Vino en Pérez Zeledón & Zona Sur",
+  "short_name": "Cava Gourmet",
+  "description": "Cava Gourmet Market: catas guiadas, asesoría personalizada y After Office en Pérez Zeledón. Sommelier Nazareth Padilla Montero.",
+  "lang": "es-CR",
   "start_url": "/NazarethPM/",
   "scope": "/NazarethPM/",
   "display": "standalone",
-  "background_color": "#f8f5f2",
+  "orientation": "portrait",
+  "background_color": "#faf7f4",
   "theme_color": "#731d2e",
-  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/NazarethPM/assets/PhotoRoom-20231102_232057.png",
+      "src": "./assets/PhotoRoom-20231102_232057.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/NazarethPM/assets/PhotoRoom-20231102_232057.png",
+      "src": "./assets/PhotoRoom-20231102_232057.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
+    }
+  ],
+  "categories": ["vino", "cata", "sommelier", "gastronomía", "Costa Rica", "Pérez Zeledón", "Zona Brunca"],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://cavagourmet.com"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "After Office",
+      "short_name": "After Office",
+      "description": "Jueves y Viernes 7:30 pm — vinos por copa y maridajes ligeros",
+      "url": "/NazarethPM/#after-office",
+      "icons": [{ "src": "./assets/PhotoRoom-20231102_232057.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Reservar Asesoría",
+      "short_name": "Asesoría",
+      "description": "Contactá a Nazareth para una asesoría personalizada de vinos",
+      "url": "https://wa.me/50684483983",
+      "icons": [{ "src": "./assets/PhotoRoom-20231102_232057.png", "sizes": "96x96" }]
     }
   ]
 }
