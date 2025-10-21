@@ -13,6 +13,17 @@
   <meta name="robots" content="index,follow" />
   <meta name="author" content="Nazareth Padilla Montero" />
 
+  <!-- PWA / App-like -->
+  <link rel="manifest" href="/NazarethPM/manifest.json">
+  <meta name="theme-color" content="#731d2e">
+  <!-- (Opcional iOS) -->
+  <link rel="apple-touch-icon" href="/NazarethPM/assets/PhotoRoom-20231102_232057.png">
+
+  <!-- Referencias humanas / seguridad -->
+  <link rel="author" href="/NazarethPM/humans.txt">
+  <!-- Nota: security.txt no tiene rel estandarizado; lo publicamos en la raíz -->
+  <!-- Disponible en: https://buenasbox.github.io/NazarethPM/security.txt -->
+
   <!-- Open Graph -->
   <meta property="og:title" content="Nazareth Padilla Montero — Sommelier & Asesora de Vinos" />
   <meta property="og:description" content="Catas guiadas, maridajes y asesorías personalizadas en Cava Gourmet Market, Costa Rica. After Office: jue/vi 7:30 pm." />
@@ -20,6 +31,7 @@
   <meta property="og:url" content="https://BuenasBox.github.io/NazarethPM/" />
   <meta property="og:image" content="https://BuenasBox.github.io/NazarethPM/assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png" />
   <meta property="og:locale" content="es_CR" />
+  <meta property="og:site_name" content="Nazareth PM | Cava Gourmet Market" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -27,6 +39,7 @@
   <meta name="twitter:description" content="Catas guiadas, maridajes y asesorías personalizadas en Cava Gourmet Market, Costa Rica." />
   <meta name="twitter:image" content="https://BuenasBox.github.io/NazarethPM/assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png" />
 
+  <!-- Favicon -->
   <link rel="icon" href="./assets/PhotoRoom-20231102_232057.png" sizes="32x32" />
 
   <style>
@@ -101,7 +114,7 @@
   © <script>document.write(new Date().getFullYear());</script> Cava Gourmet Market · Desarrollado por BuenasBox
 </footer>
 
-<!-- JSON-LD: WebSite + Breadcrumb + Person + LocalBusiness + Event -->
+<!-- JSON-LD: WebSite + Breadcrumb (implícito) + Person + LocalBusiness + Event -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -207,5 +220,9 @@
 }
 </script>
 
+<!-- Analítica ligera (GoatCounter). Reemplaza TU-SUBDOMINIO si lo configuras -->
+<script data-goatcounter="https://TU-SUBDOMINIO.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+
 </body>
-  </html>
+</html>
