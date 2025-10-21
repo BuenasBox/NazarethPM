@@ -1,34 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
   <!-- Página principal -->
   <url>
     <loc>https://buenasbox.github.io/NazarethPM/</loc>
     <lastmod>2025-10-21</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Perfil de Nazareth -->
+  <!-- Sección: Sommelier -->
   <url>
-    <loc>https://buenasbox.github.io/NazarethPM/#person</loc>
+    <loc>https://buenasbox.github.io/NazarethPM/#sommelier</loc>
     <lastmod>2025-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Sección de Cava Gourmet Market -->
-  <url>
-    <loc>https://buenasbox.github.io/NazarethPM/#org</loc>
-    <lastmod>2025-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- After Office Experience -->
+  <!-- Sección: After Office -->
   <url>
     <loc>https://buenasbox.github.io/NazarethPM/#after-office</loc>
     <lastmod>2025-10-21</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Sección: Vino en Pérez Zeledón -->
+  <url>
+    <loc>https://buenasbox.github.io/NazarethPM/#vino</loc>
+    <lastmod>2025-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sección: Zona Sur / Costa Rica -->
+  <url>
+    <loc>https://buenasbox.github.io/NazarethPM/#zona-sur</loc>
+    <lastmod>2025-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sección: Contacto -->
+  <url>
+    <loc>https://buenasbox.github.io/NazarethPM/#contacto</loc>
+    <lastmod>2025-10-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
