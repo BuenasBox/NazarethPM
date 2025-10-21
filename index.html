@@ -13,31 +13,52 @@
     gtag('config', 'G-4PJ8CKKP45');
   </script>
 
-  <!-- META -->
+  <!-- META principales -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Cava Gourmet Market — Vino en Pérez Zeledón & Zona Sur | Sommelier Nazareth Padilla Montero</title>
   <meta name="description" content="Descubre los mejores vinos en Pérez Zeledón y Zona Sur. Cava Gourmet Market ofrece catas guiadas, maridajes y asesoría de la sommelier Nazareth Padilla Montero. After Office jueves y viernes 7:30 pm." />
   <link rel="canonical" href="https://buenasbox.github.io/NazarethPM/" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#731d2e" />
+  <meta name="author" content="Nazareth Padilla Montero & Cava Gourmet Market" />
 
-  <!-- OG / Twitter -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Vino en Pérez Zeledón y Zona Sur — Cava Gourmet Market">
-  <meta property="og:description" content="Catas, maridajes y asesoría profesional con Nazareth Padilla Montero en Cava Gourmet Market, Costa Rica.">
-  <meta property="og:image" content="https://buenasbox.github.io/NazarethPM/assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png">
-  <meta property="og:url" content="https://buenasbox.github.io/NazarethPM/">
-  <meta name="twitter:card" content="summary_large_image">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://buenasbox.github.io/NazarethPM/" />
+  <meta property="og:title" content="Vino en Pérez Zeledón y Zona Sur — Cava Gourmet Market" />
+  <meta property="og:description" content="Catas, maridajes y asesoría con la sommelier Nazareth Padilla Montero en Cava Gourmet Market." />
+  <meta property="og:image" content="https://buenasbox.github.io/NazarethPM/assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png" />
+  <meta property="og:site_name" content="Cava Gourmet Market" />
+  <meta property="og:locale" content="es_CR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vino en Pérez Zeledón y Zona Sur — Cava Gourmet Market" />
+  <meta name="twitter:description" content="Catas, maridajes y asesoría con la sommelier Nazareth Padilla Montero en Cava Gourmet Market." />
+  <meta name="twitter:image" content="https://buenasbox.github.io/NazarethPM/assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png" />
 
-  <!-- ICONOS -->
+  <!-- 🔹 Progressive Web App (PWA) Configuration -->
   <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="./assets/PhotoRoom-20231102_232057.png">
-  <link rel="apple-touch-icon" href="./assets/PhotoRoom-20231102_232057.png">
+  <meta name="application-name" content="Cava Gourmet Market">
+  <meta name="apple-mobile-web-app-title" content="Cava Gourmet Market">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="background-color" content="#faf7f4">
+  <meta name="msapplication-starturl" content="/NazarethPM/">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- 🔹 App Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/PhotoRoom-20231102_232057.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/PhotoRoom-20231102_232057.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/PhotoRoom-20231102_232057.png">
+  <link rel="mask-icon" href="./assets/PhotoRoom-20231102_232057.png" color="#731d2e">
+  <link rel="apple-touch-startup-image" href="./assets/PhotoRoom-20231102_232057.png">
 
   <style>
     :root{--bg:#faf7f4;--ink:#2e1a1a;--brand:#731d2e;--card:#fff;--muted:#6a5555;}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5}
     header{text-align:center;padding:26px 16px}
     header img{width:88px;height:auto;margin-bottom:8px}
     h1{color:var(--brand);font-size:1.9rem;margin:4px 0}
@@ -45,9 +66,11 @@
     .main{max-width:860px;margin:auto;padding:0 16px}
     .card{background:var(--card);border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,.06);margin:14px 0;padding:22px}
     .btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:10px 14px;border-radius:10px;font-weight:700}
+    .btn:hover{opacity:.92}
     .profile{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:center}
     .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(0,0,0,.15)}
     footer{text-align:center;margin:28px auto;color:#826c6c;font-size:.9rem}
+    .small{font-size:.95rem;color:#6c5656}
     @media(max-width:720px){.profile{grid-template-columns:1fr;text-align:center}.avatar{margin:0 auto}}
   </style>
 </head>
@@ -61,33 +84,40 @@
 
   <main class="main">
     <!-- PERFIL -->
-    <section class="card profile">
+    <section class="card profile" id="sommelier" aria-label="Sommelier">
       <img class="avatar" src="./assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png" alt="Sommelier Nazareth Padilla Montero">
       <div>
         <h3>Sommelier en Pérez Zeledón</h3>
         <p>En la Zona Sur de Costa Rica, <strong>Cava Gourmet Market</strong> es el punto de encuentro del vino. La sommelier <strong>Nazareth Padilla Montero</strong> guía catas, maridajes y experiencias educativas para descubrir y disfrutar vinos del mundo.</p>
-        <a class="btn" href="https://wa.me/50684483983" target="_blank">Reserva tu experiencia</a>
+        <nav aria-label="Perfiles oficiales" style="display:flex;flex-wrap:wrap;gap:10px;margin:10px 0;">
+          <a class="btn" href="https://www.mastersommeliers.org/sommelier-directory/nazarethpm/" target="_blank" rel="noopener">CMS Directory</a>
+          <a class="btn" href="https://cr.linkedin.com/in/nazarethpm" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://www.instagram.com/nazarethwinejourney" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn" href="https://www.tiktok.com/@nazarethwinejourney" target="_blank" rel="noopener">TikTok</a>
+          <a class="btn" href="https://wa.me/50684483983" target="_blank" rel="noopener">WhatsApp</a>
+        </nav>
+        <p class="small">🌐 <a href="https://cavagourmet.com" target="_blank" rel="noopener">cavagourmet.com</a> · 📍 Zona Brunca, Pérez Zeledón</p>
       </div>
     </section>
 
     <!-- CAVA -->
-    <section class="card">
+    <section class="card" aria-label="Sobre Cava Gourmet Market">
       <h3>Sobre Cava Gourmet Market</h3>
       <p>Cava Gourmet Market está ubicada en Pérez Zeledón, corazón de la Zona Brunca. Es una cava boutique que ofrece selección curada de vinos, catas guiadas, asesoría personalizada y el evento <strong>After Office</strong> los jueves y viernes a las 7:30 pm.</p>
     </section>
 
     <!-- AFTER OFFICE -->
-    <section class="card">
+    <section class="card" id="after-office" aria-label="After Office">
       <h3>After Office — Vino por copa en San Isidro de El General</h3>
       <p>Descubrí nuevas etiquetas por copa en un ambiente relajado. Cupos limitados, previa confirmación.</p>
-      <p><a class="btn" href="https://share.google/u9ZTCiDZMj7ppFLFD" target="_blank">Ver opiniones</a></p>
+      <p><a class="btn" href="https://share.google/u9ZTCiDZMj7ppFLFD" target="_blank" rel="noopener">⭐ Ver opiniones</a></p>
     </section>
 
     <!-- BLOQUE LOCAL SEO -->
-    <section class="card">
-      <h3>Vino en la Zona Sur — Costa Rica</h3>
+    <section class="card" id="zona-sur" aria-label="Vino en Zona Sur">
+      <h3>Vino en Pérez Zeledón y Zona Sur — Costa Rica</h3>
       <p>Si buscás <strong>vino en Pérez Zeledón</strong> o una <strong>tienda de vinos en la Zona Sur</strong>, Cava Gourmet Market te ofrece una experiencia completa: desde asesoría de compra hasta degustaciones educativas, con atención personalizada de una sommelier certificada.</p>
-      <ul style="color:#6b5656;line-height:1.6">
+      <ul class="small" style="line-height:1.6">
         <li>🍷 Catas guiadas y maridajes temáticos</li>
         <li>🥂 After Office: vinos por copa y conversación</li>
         <li>📍 Atención en Zona Brunca, Pérez Zeledón, Costa Rica</li>
@@ -95,15 +125,15 @@
     </section>
 
     <!-- TEMAS -->
-    <section class="card">
+    <section class="card" id="vino" aria-label="Explorar temas relacionados">
       <h3>Explorar temas relacionados</h3>
-      <p style="color:#6c5656">Buscado por los amantes del vino en la Zona Sur:</p>
+      <p class="small">Buscado por los amantes del vino en la Zona Sur:</p>
       <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
         <a class="btn" href="#vino" style="background:#eee;color:#2e1a1a">vino en Pérez Zeledón</a>
         <a class="btn" href="#vino" style="background:#eee;color:#2e1a1a">vino Zona Sur</a>
         <a class="btn" href="#vino" style="background:#eee;color:#2e1a1a">sommelier en Costa Rica</a>
-        <a class="btn" href="#vino" style="background:#eee;color:#2e1a1a">cata de vinos</a>
-        <a class="btn" href="#vino" style="background:#eee;color:#2e1a1a">after office vino</a>
+        <a class="btn" href="#after-office" style="background:#eee;color:#2e1a1a">cata de vinos</a>
+        <a class="btn" href="#after-office" style="background:#eee;color:#2e1a1a">after office vino</a>
         <a class="btn" href="#vino" style="background:#eee;color:#2e1a1a">maridaje</a>
       </div>
     </section>
@@ -111,7 +141,7 @@
 
   <footer>© <script>document.write(new Date().getFullYear())</script> Cava Gourmet Market · Zona Brunca, Costa Rica</footer>
 
-  <!-- JSON-LD Local SEO -->
+  <!-- ========= JSON-LD: LocalBusiness con geo + horarios ========= -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -147,5 +177,99 @@
     ]
   }
   </script>
+
+  <!-- ========= JSON-LD: FAQ (incluye “cerca de mí”) ========= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el After Office de Cava?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un encuentro relajado para explorar vinos por copa con guía de cata, maridajes ligeros y cupos limitados, jueves y viernes a las 7:30 p.m."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrecen asesoría personalizada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Nazareth diseña sesiones uno-a-uno para elegir vinos, formar equipos, crear cartas o planear experiencias corporativas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo encuentro catas de vino y sommelier cerca de mí?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Atendemos Zona Brunca (Pérez Zeledón / San Isidro de El General). Consultá fechas del After Office o escribinos por WhatsApp para una asesoría personalizada."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ========= JSON-LD: Breadcrumb ========= -->
+  <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {"@type":"ListItem","position":1,"name":"Inicio","item":"https://buenasbox.github.io/NazarethPM/"},
+     {"@type":"ListItem","position":2,"name":"After Office","item":"https://buenasbox.github.io/NazarethPM/#after-office"}
+   ]
+  }
+  </script>
+
+  <!-- ========= JSON-LD: Services + areaServed (refuerzo semántico) ========= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://buenasbox.github.io/NazarethPM/#service-catas",
+        "name": "Catas de vino guiadas",
+        "alternateName": "Cata de vinos; Catas guiadas",
+        "serviceType": "Wine tasting",
+        "provider": { "@id": "https://buenasbox.github.io/NazarethPM/#org" },
+        "areaServed": ["Pérez Zeledón","Zona Brunca","Zona Sur","San Isidro de El General"],
+        "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://cavagourmet.com" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://buenasbox.github.io/NazarethPM/#service-asesoria",
+        "name": "Asesoría personalizada de vinos",
+        "alternateName": "Sommelier; Sumiller; Asesoría de vinos",
+        "serviceType": "Wine consulting",
+        "provider": { "@id": "https://buenasbox.github.io/NazarethPM/#org" },
+        "areaServed": ["Pérez Zeledón","Zona Brunca","Zona Sur","San Isidro de El General"],
+        "availableChannel": { "@type": "ServiceChannel", "servicePhone": "+50684483983" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://buenasbox.github.io/NazarethPM/#service-maridajes",
+        "name": "Maridajes y carta de vinos",
+        "alternateName": "Maridaje; Selección de vinos para restaurantes",
+        "serviceType": "Menu pairing & wine list design",
+        "provider": { "@id": "https://buenasbox.github.io/NazarethPM/#org" },
+        "areaServed": ["Pérez Zeledón","Zona Brunca","Zona Sur","San Isidro de El General"]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://buenasbox.github.io/NazarethPM/#service-copa",
+        "name": "Vino por copa — After Office",
+        "alternateName": "After Office; Vino por copa",
+        "serviceType": "Wine bar by the glass",
+        "provider": { "@id": "https://buenasbox.github.io/NazarethPM/#org" },
+        "areaServed": ["Pérez Zeledón","Zona Brunca","Zona Sur","San Isidro de El General"]
+      }
+    ]
+  }
+  </script>
+
 </body>
   </html>
