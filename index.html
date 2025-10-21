@@ -12,18 +12,16 @@
   <link rel="canonical" href="https://BuenasBox.github.io/NazarethPM/" />
   <meta name="robots" content="index,follow" />
   <meta name="author" content="Nazareth Padilla Montero" />
-  <link rel="alternate" type="application/ld+json" href="/NazarethPM/entities.jsonld">
-  <link rel="alternate" type="application/ld+json" href="/NazarethPM/expertise.jsonld">
+
   <!-- PWA / App-like -->
   <link rel="manifest" href="/NazarethPM/manifest.json">
   <meta name="theme-color" content="#731d2e">
-  <!-- (Opcional iOS) -->
+  <!-- iOS -->
   <link rel="apple-touch-icon" href="/NazarethPM/assets/PhotoRoom-20231102_232057.png">
 
-  <!-- Referencias humanas / seguridad -->
+  <!-- Archivos informativos -->
   <link rel="author" href="/NazarethPM/humans.txt">
-  <!-- Nota: security.txt no tiene rel estandarizado; lo publicamos en la raíz -->
-  <!-- Disponible en: https://buenasbox.github.io/NazarethPM/security.txt -->
+  <!-- security.txt se sirve en la raíz: /NazarethPM/security.txt -->
 
   <!-- Open Graph -->
   <meta property="og:title" content="Nazareth Padilla Montero — Sommelier & Asesora de Vinos" />
@@ -42,6 +40,11 @@
 
   <!-- Favicon -->
   <link rel="icon" href="./assets/PhotoRoom-20231102_232057.png" sizes="32x32" />
+
+  <!-- Referencias a JSON-LD externos -->
+  <link rel="alternate" type="application/ld+json" href="/NazarethPM/entities.jsonld">
+  <link rel="alternate" type="application/ld+json" href="/NazarethPM/expertise.jsonld">
+  <link rel="alternate" type="application/ld+json" href="/NazarethPM/reviews.jsonld">
 
   <style>
   :root{
@@ -67,6 +70,11 @@
     .profile{grid-template-columns:1fr;text-align:center}
     .profile .avatar{margin:0 auto}
   }
+  /* Bloque testimonios */
+  .reviews ul{padding-left:18px}
+  .reviews li{margin:.35rem 0}
+  .btn{display:inline-block;background:#731d2e;color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+  .btn:hover{opacity:.92}
   </style>
 </head>
 
@@ -80,6 +88,7 @@
 
 <main class="main">
 
+  <!-- PERFIL -->
   <section class="card profile" aria-label="Perfil de Nazareth">
     <img class="avatar" src="./assets/9b948966-bf54-44e9-8a4d-7a0a9f7643ca.png" alt="Foto profesional de Nazareth Padilla Montero" />
     <div>
@@ -99,14 +108,29 @@
     </div>
   </section>
 
+  <!-- SOBRE CAVA -->
   <section class="card" aria-label="Sobre Cava Gourmet Market">
     <h3>Sobre Cava Gourmet Market</h3>
     <p>Selección curada de vinos, experiencias de cata, eventos “After Office”, y asesoría para empresas y particulares. Un punto de encuentro para aprender, compartir y disfrutar del vino con criterio.</p>
   </section>
 
+  <!-- AFTER OFFICE -->
   <section class="card" aria-label="After Office">
     <h3>After Office — Jueves y Viernes 7:30 pm</h3>
     <p>Encuentro relajado para explorar vinos por copa, maridajes ligeros y conversación guiada. Cupos limitados, previa confirmación.</p>
+    <p style="margin-top:12px;">
+      <a class="btn" href="https://share.google/u9ZTCiDZMj7ppFLFD" target="_blank" rel="noopener">⭐ Ver opiniones en Google</a>
+    </p>
+  </section>
+
+  <!-- TESTIMONIOS ON-SITE (first-party) -->
+  <section class="card reviews" aria-label="Testimonios">
+    <h3>Lo que dicen nuestros visitantes</h3>
+    <ul>
+      <li><strong>Cliente verificado</strong>: “Ambiente acogedor y guía de cata excelente.” (5/5)</li>
+      <li><strong>Visitante local</strong>: “Asesoría precisa para nuestro menú.” (5/5)</li>
+      <li><strong>Turista</strong>: “Cata didáctica y divertida.” (5/5)</li>
+    </ul>
   </section>
 
 </main>
@@ -115,7 +139,7 @@
   © <script>document.write(new Date().getFullYear());</script> Cava Gourmet Market · Desarrollado por BuenasBox
 </footer>
 
-<!-- JSON-LD: WebSite + Breadcrumb (implícito) + Person + LocalBusiness + Event -->
+<!-- JSON-LD: WebSite + Person + LocalBusiness + Event -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -176,7 +200,9 @@
       },
       "sameAs": [
         "https://instagram.com/cavapz",
-        "https://cavagourmet.com"
+        "https://cavagourmet.com",
+        "https://share.google/u9ZTCiDZMj7ppFLFD",
+        "https://www.tripadvisor.com.mx/Attraction_Review-g12886080-d26727331-Reviews-Cava_Gourmet_Market-Daniel_Flores_Daniel_Flores_District_Perez_Zeledon_Provinc.html"
       ],
       "telephone": "+50684483983",
       "priceRange": "$$"
@@ -221,9 +247,36 @@
 }
 </script>
 
-<!-- Analítica ligera (GoatCounter). Reemplaza TU-SUBDOMINIO si lo configuras -->
-<script data-goatcounter="https://TU-SUBDOMINIO.goatcounter.com/count"
-        async src="https://gc.zgo.at/count.js"></script>
+<!-- JSON-LD inline para testimonios on-site (habilita rich results de reviews si son first-party) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "@id":"https://BuenasBox.github.io/NazarethPM/#org",
+  "name":"Cava Gourmet Market",
+  "url":"https://cavagourmet.com",
+  "review":[
+    {
+      "@type":"Review",
+      "reviewBody":"Ambiente acogedor y guía de cata excelente.",
+      "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "author":{"@type":"Person","name":"Cliente verificado"}
+    },
+    {
+      "@type":"Review",
+      "reviewBody":"Asesoría precisa para nuestro menú.",
+      "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "author":{"@type":"Person","name":"Visitante local"}
+    },
+    {
+      "@type":"Review",
+      "reviewBody":"Cata didáctica y divertida.",
+      "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},
+      "author":{"@type":"Person","name":"Turista"}
+    }
+  ]
+}
+</script>
 
 </body>
-</html>
+          </html>
