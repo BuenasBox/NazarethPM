@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark>
+    <name>Cava Gourmet Market</name>
+    <description>
+      Cava Gourmet Market — Sommelier & Asesora de Vinos
+      Pérez Zeledón, Zona Brunca, Costa Rica.
+      After Office de vinos Jue/Vie 7:30 pm.
+    </description>
+    <Point>
+      <coordinates>-83.6732876,9.3413093,0</coordinates>
+    </Point>
+  </Placemark>
+</kml>
